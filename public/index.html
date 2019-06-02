@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    
+    <script src="./index.js"></script>
+    <title>geolocations</title>
+
+</head>
+<body>
+    <h1>YOUR LOCATION:</h1>
+    <a href="logs/all.html">all</a>
+    <p>
+      latitude: <span id="latitude"></span>&deg;<br />
+      longtitude: <span id="longtitude"></span>&deg;
+    </p>
+    <p>
+      weather in <span id="timezone"></span>: 
+      <span id="summary"></span>
+      <span id="temperature"></span>&deg; Celsius.
+      The concentration of particulate matter <span id="aq_param"></span>
+      is <span id="aq_value"></span> <span id="aq_units"></span> last reads
+      on <span id="aq_date"></span>
+    </p>
+    <label for="mood">your mood</label>
+    <input type="text" placeholder="your mood" id="mood">
+    <!-- <button id="submitItem" onclick="sendPost()">Submit</button> -->
+</body>
+</html>
